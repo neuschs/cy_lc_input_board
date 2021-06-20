@@ -1,0 +1,58 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ESDA6V1L-SamacSys_Parts
+#
+DEF ESDA6V1L-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 750 300 50 H V L CNN
+F1 "ESDA6V1L-SamacSys_Parts" 750 200 50 H V L CNN
+F2 "SOT105P242X150-3N" 750 100 50 H I L CNN
+F3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00002057.pdf" 750 0 50 H I L CNN
+F4 "Unidirectional 300W TVS array,ESDA6V1L STMicroelectronics ESDA6V1L, Uni-Directional TVS Diode Array Dual, 300W, 3-Pin SOT-23" 750 -100 50 H I L CNN "Description"
+F5 "1.5" 750 -200 50 H I L CNN "Height"
+F6 "511-ESDA6V1L" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDA6V1L/?qs=EYQuxaDwR7%252BaNd55azzc7g%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "STMicroelectronics" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "ESDA6V1L" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -200 200 -200 200 100 N
+X K1 1 0 0 200 R 50 50 0 0 P
+X K2 2 0 -100 200 R 50 50 0 0 P
+X A 3 900 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# USB_B-Connector
+#
+DEF USB_B-Connector J 0 40 Y Y 1 F N
+F0 "J" -200 450 50 H V L CNN
+F1 "USB_B-Connector" -200 350 50 H V L CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+$FPLIST
+ USB*
+$ENDFPLIST
+DRAW
+C -150 85 25 0 1 10 F
+C -25 135 15 0 1 10 F
+S -200 -300 200 300 0 1 10 f
+S -150 220 -100 180 0 1 0 F
+S -5 -300 5 -270 0 1 0 N
+S 10 50 -20 20 0 1 10 F
+S 200 -105 170 -95 0 1 0 N
+S 200 -5 170 5 0 1 0 N
+S 200 195 170 205 0 1 0 N
+P 2 0 1 10 -75 85 25 85 N
+P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
+P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
+P 4 0 1 10 25 110 25 60 75 85 25 110 F
+P 7 0 1 0 -160 170 -90 170 -90 225 -105 240 -145 240 -160 225 -160 170 N
+X VBUS 1 300 200 100 L 50 50 1 1 w
+X D- 2 300 -100 100 L 50 50 1 1 B
+X D+ 3 300 0 100 L 50 50 1 1 B
+X GND 4 0 -400 100 U 50 50 1 1 w
+X Shield 5 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
